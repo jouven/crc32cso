@@ -1,0 +1,24 @@
+#ignore
+
+#folders
+build-Desktop-Debug/
+build-Desktop-Release/
+build-Desktop-Profile/
+DebugWin/
+ReleaseWin/
+.externalToolBuilders/
+.settings/
+
+#files
+.project
+.cproject
+includeheaders
+
+#file types
+*.o
+*.d
+*.exe
+*.pro.user
+*.so
+*.dll
+*.a
