@@ -1,5 +1,6 @@
 #message($$QMAKESPEC)
-QT -= gui core
+#linux requires core to use the "qtGlobal" include like in windows
+QT -= gui #core
 
 TARGET = crc32cso
 TEMPLATE = lib
