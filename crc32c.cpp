@@ -19,8 +19,9 @@
 */
 #ifdef DEBUGJOUVEN
 #include "backwardSTso/backward.hpp"
-#include "comuso/loggingMacros.hpp"
-#include <iostream>
+#include <QDateTime>
+#include "essentialQtso/essentialQt.hpp"
+#include "essentialQtso/macros.hpp"
 #endif
 
 #include "crc32c.hpp"
@@ -279,11 +280,11 @@ static bool detect_hw()
 #ifdef DEBUGJOUVEN
 	if (hwCrc32c)
 	{
-		std::cout << DEBUGDATETIME << DEBUGSOURCE << "using crc32c hardware\n";
+        qtOutLine_f(DEBUGDATETIME + DEBUGSOURCE + "using crc32c hardware");
 	}
 	else
 	{
-		std::cout << DEBUGDATETIME << DEBUGSOURCE << "using crc32c software\n";
+        qtOutLine_f(DEBUGDATETIME + DEBUGSOURCE + "using crc32c software");
 	}
 
 #endif
