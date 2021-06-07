@@ -1,8 +1,7 @@
 #message($$QMAKESPEC)
 #linux requires core to use the "qtGlobal" include like in windows
-QT -= gui #core
+QT -= gui
 
-TARGET = crc32cso
 TEMPLATE = lib
 
 !android:QMAKE_CXXFLAGS += -std=c++17
@@ -43,7 +42,8 @@ CONFIG(release, debug|release){
 }
 #debug
 CONFIG(debug, debug|release){
-    LIBS += -L$${MYPATH}home/jouven/mylibs/debug/ -lbackwardSTso -lessentialQtso
+    QT += core
+    LIBS += -L$${MYPATH}home/jouven/mylibs/debug/ -lessentialQtso
     DEPENDPATH += $${MYPATH}home/jouven/mylibs/debug
     QMAKE_RPATHDIR += $${MYPATH}home/jouven/mylibs/debug
     DEFINES += DEBUGJOUVEN
