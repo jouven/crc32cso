@@ -18,7 +18,7 @@
   3. This notice may not be removed or altered from any source distribution.
 */
 #ifdef DEBUGJOUVEN
-#include "backwardcppso/backward.hpp"
+#include "backward-cpp/backward.hpp"
 #include <QDateTime>
 #include "essentialQtso/essentialQt.hpp"
 #include "essentialQtso/macros.hpp"
